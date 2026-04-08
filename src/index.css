@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -10,30 +11,76 @@
   }
 }
 
+/* Vol 1 */
 @keyframes pulse-ring {
   0% { transform: scale(0.8); opacity: 0; }
   50% { opacity: 0.5; }
   100% { transform: scale(1.5); opacity: 0; }
 }
-
 @keyframes sync-move {
   0%, 100% { transform: scaleY(1); }
   50% { transform: scaleY(1.8); }
 }
-
 @keyframes fold-flip {
   0%, 100% { transform: rotateX(0); }
   50% { transform: rotateX(180deg); }
 }
 
+/* Vol 2 */
+@keyframes pair-pulse {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+@keyframes recall-flash {
+  0%, 60%, 100% { opacity: 0.2; }
+  30% { opacity: 1; }
+}
+@keyframes adapt-morph {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  33% { opacity: 0.4; transform: scale(0.85); }
+  66% { opacity: 1; transform: scale(1.1); }
+}
+@keyframes adapt-rule {
+  0%, 40%, 100% { opacity: 0.2; }
+  50%, 90% { opacity: 0.6; }
+}
+
+/* Vol 3 */
+@keyframes flow-draw {
+  0% { stroke-dashoffset: 400; opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { stroke-dashoffset: 0; opacity: 0.8; }
+}
+@keyframes flow-dot {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
 .animate-pulse-ring {
   animation: pulse-ring 3s infinite cubic-bezier(0.22, 1, 0.36, 1);
 }
-
 .animate-sync-move {
   animation: sync-move 2s infinite ease-in-out;
 }
-
 .animate-fold-flip {
   animation: fold-flip 4s infinite cubic-bezier(0.22, 1, 0.36, 1);
+}
+.animate-pair-pulse {
+  animation: pair-pulse 1.6s infinite ease-in-out;
+}
+.animate-recall-flash {
+  animation: recall-flash 1.8s infinite ease-in-out;
+}
+.animate-adapt-morph {
+  animation: adapt-morph 3s infinite ease-in-out;
+}
+.animate-adapt-rule {
+  animation: adapt-rule 3s infinite ease-in-out;
+}
+.animate-flow-draw {
+  stroke-dasharray: 400;
+  animation: flow-draw 3s infinite ease-in-out;
+}
+.animate-flow-dot {
+  animation: flow-dot 3s infinite ease-in-out;
 }
