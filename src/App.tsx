@@ -251,7 +251,7 @@ export default function App() {
             viewport={{ once: true }}
             className="text-lg md:text-xl text-neutral-400 mb-12 leading-relaxed"
           >
-            At AyTee Labs, we believe games should be as refined as the tools we use every day. No clutter, no noise—just pure mechanics wrapped in a premium aesthetic. Our collection is built for those who appreciate the beauty of simplicity.
+            At AyTee Labs, we believe games should be as refined as the tools we use every day. No clutter, no noise just pure mechanics wrapped in a premium aesthetic. Our collection is built for those who appreciate the beauty of simplicity.
           </motion.p>
           <div className="text-xs font-semibold tracking-[0.2em] uppercase opacity-40">
             AyTee Labs
